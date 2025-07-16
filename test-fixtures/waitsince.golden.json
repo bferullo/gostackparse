@@ -10,32 +10,38 @@
         {
           "Func": "runtime/pprof.writeGoroutineStacks",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/pprof/pprof.go",
-          "Line": 693
+          "Line": 693,
+          "Goroutine": 1
         },
         {
           "Func": "runtime/pprof.writeGoroutine",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/pprof/pprof.go",
-          "Line": 682
+          "Line": 682,
+          "Goroutine": 1
         },
         {
           "Func": "runtime/pprof.(*Profile).WriteTo",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/pprof/pprof.go",
-          "Line": 331
+          "Line": 331,
+          "Goroutine": 1
         },
         {
           "Func": "main.glob..func5",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 67
+          "Line": 67,
+          "Goroutine": 1
         },
         {
           "Func": "main.writeProfiles",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 106
+          "Line": 106,
+          "Goroutine": 1
         },
         {
           "Func": "main.main",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 152
+          "Line": 152,
+          "Goroutine": 1
         }
       ],
       "FramesElided": false,
@@ -50,19 +56,22 @@
         {
           "Func": "time.Sleep",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/time.go",
-          "Line": 188
+          "Line": 188,
+          "Goroutine": 22
         },
         {
           "Func": "main.shortSleepLoop",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 165
+          "Line": 165,
+          "Goroutine": 22
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "main.indirectShortSleepLoop2",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-        "Line": 185
+        "Line": 185,
+        "Goroutine": 0
       }
     },
     {
@@ -74,64 +83,76 @@
         {
           "Func": "internal/poll.runtime_pollWait",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/netpoll.go",
-          "Line": 222
+          "Line": 222,
+          "Goroutine": 3
         },
         {
           "Func": "internal/poll.(*pollDesc).wait",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_poll_runtime.go",
-          "Line": 87
+          "Line": 87,
+          "Goroutine": 3
         },
         {
           "Func": "internal/poll.(*pollDesc).waitRead",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_poll_runtime.go",
-          "Line": 92
+          "Line": 92,
+          "Goroutine": 3
         },
         {
           "Func": "internal/poll.(*FD).Accept",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_unix.go",
-          "Line": 394
+          "Line": 394,
+          "Goroutine": 3
         },
         {
           "Func": "net.(*netFD).accept",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/fd_unix.go",
-          "Line": 172
+          "Line": 172,
+          "Goroutine": 3
         },
         {
           "Func": "net.(*TCPListener).accept",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/tcpsock_posix.go",
-          "Line": 139
+          "Line": 139,
+          "Goroutine": 3
         },
         {
           "Func": "net.(*TCPListener).Accept",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/tcpsock.go",
-          "Line": 261
+          "Line": 261,
+          "Goroutine": 3
         },
         {
           "Func": "net/http.(*Server).Serve",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
-          "Line": 2937
+          "Line": 2937,
+          "Goroutine": 3
         },
         {
           "Func": "net/http.(*Server).ListenAndServe",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
-          "Line": 2866
+          "Line": 2866,
+          "Goroutine": 3
         },
         {
           "Func": "net/http.ListenAndServe",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
-          "Line": 3120
+          "Line": 3120,
+          "Goroutine": 3
         },
         {
           "Func": "main.main.func1",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 123
+          "Line": 123,
+          "Goroutine": 3
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-        "Line": 121
+        "Line": 121,
+        "Goroutine": 0
       }
     },
     {
@@ -143,19 +164,22 @@
         {
           "Func": "time.Sleep",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/time.go",
-          "Line": 188
+          "Line": 188,
+          "Goroutine": 4
         },
         {
           "Func": "main.shortSleepLoop",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 165
+          "Line": 165,
+          "Goroutine": 4
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-        "Line": 130
+        "Line": 130,
+        "Goroutine": 0
       }
     },
     {
@@ -167,19 +191,22 @@
         {
           "Func": "time.Sleep",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/time.go",
-          "Line": 188
+          "Line": 188,
+          "Goroutine": 5
         },
         {
           "Func": "main.sleepLoop",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 171
+          "Line": 171,
+          "Goroutine": 5
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-        "Line": 131
+        "Line": 131,
+        "Goroutine": 0
       }
     },
     {
@@ -191,14 +218,16 @@
         {
           "Func": "main.chanReceiveForever",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-          "Line": 177
+          "Line": 177,
+          "Goroutine": 6
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
-        "Line": 132
+        "Line": 132,
+        "Goroutine": 0
       }
     },
     {
@@ -210,14 +239,16 @@
         {
           "Func": "net/http.(*persistConn).writeLoop",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/transport.go",
-          "Line": 2340
+          "Line": 2340,
+          "Goroutine": 24
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "net/http.(*Transport).dialConn",
         "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/transport.go",
-        "Line": 1709
+        "Line": 1709,
+        "Goroutine": 0
       }
     },
     {
@@ -229,59 +260,70 @@
         {
           "Func": "internal/poll.runtime_pollWait",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/netpoll.go",
-          "Line": 222
+          "Line": 222,
+          "Goroutine": 23
         },
         {
           "Func": "internal/poll.(*pollDesc).wait",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_poll_runtime.go",
-          "Line": 87
+          "Line": 87,
+          "Goroutine": 23
         },
         {
           "Func": "internal/poll.(*pollDesc).waitRead",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_poll_runtime.go",
-          "Line": 92
+          "Line": 92,
+          "Goroutine": 23
         },
         {
           "Func": "internal/poll.(*FD).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_unix.go",
-          "Line": 159
+          "Line": 159,
+          "Goroutine": 23
         },
         {
           "Func": "net.(*netFD).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/fd_posix.go",
-          "Line": 55
+          "Line": 55,
+          "Goroutine": 23
         },
         {
           "Func": "net.(*conn).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/net.go",
-          "Line": 182
+          "Line": 182,
+          "Goroutine": 23
         },
         {
           "Func": "net/http.(*persistConn).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/transport.go",
-          "Line": 1887
+          "Line": 1887,
+          "Goroutine": 23
         },
         {
           "Func": "bufio.(*Reader).fill",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/bufio/bufio.go",
-          "Line": 101
+          "Line": 101,
+          "Goroutine": 23
         },
         {
           "Func": "bufio.(*Reader).Peek",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/bufio/bufio.go",
-          "Line": 139
+          "Line": 139,
+          "Goroutine": 23
         },
         {
           "Func": "net/http.(*persistConn).readLoop",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/transport.go",
-          "Line": 2040
+          "Line": 2040,
+          "Goroutine": 23
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "net/http.(*Transport).dialConn",
         "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/transport.go",
-        "Line": 1708
+        "Line": 1708,
+        "Goroutine": 0
       }
     },
     {
@@ -293,84 +335,100 @@
         {
           "Func": "internal/poll.runtime_pollWait",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/netpoll.go",
-          "Line": 222
+          "Line": 222,
+          "Goroutine": 41
         },
         {
           "Func": "internal/poll.(*pollDesc).wait",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_poll_runtime.go",
-          "Line": 87
+          "Line": 87,
+          "Goroutine": 41
         },
         {
           "Func": "internal/poll.(*pollDesc).waitRead",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_poll_runtime.go",
-          "Line": 92
+          "Line": 92,
+          "Goroutine": 41
         },
         {
           "Func": "internal/poll.(*FD).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/internal/poll/fd_unix.go",
-          "Line": 159
+          "Line": 159,
+          "Goroutine": 41
         },
         {
           "Func": "net.(*netFD).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/fd_posix.go",
-          "Line": 55
+          "Line": 55,
+          "Goroutine": 41
         },
         {
           "Func": "net.(*conn).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/net.go",
-          "Line": 182
+          "Line": 182,
+          "Goroutine": 41
         },
         {
           "Func": "net/http.(*connReader).Read",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
-          "Line": 798
+          "Line": 798,
+          "Goroutine": 41
         },
         {
           "Func": "bufio.(*Reader).fill",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/bufio/bufio.go",
-          "Line": 101
+          "Line": 101,
+          "Goroutine": 41
         },
         {
           "Func": "bufio.(*Reader).ReadSlice",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/bufio/bufio.go",
-          "Line": 360
+          "Line": 360,
+          "Goroutine": 41
         },
         {
           "Func": "bufio.(*Reader).ReadLine",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/bufio/bufio.go",
-          "Line": 389
+          "Line": 389,
+          "Goroutine": 41
         },
         {
           "Func": "net/textproto.(*Reader).readLineSlice",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/textproto/reader.go",
-          "Line": 58
+          "Line": 58,
+          "Goroutine": 41
         },
         {
           "Func": "net/textproto.(*Reader).ReadLine",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/textproto/reader.go",
-          "Line": 39
+          "Line": 39,
+          "Goroutine": 41
         },
         {
           "Func": "net/http.readRequest",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/request.go",
-          "Line": 1012
+          "Line": 1012,
+          "Goroutine": 41
         },
         {
           "Func": "net/http.(*conn).readRequest",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
-          "Line": 984
+          "Line": 984,
+          "Goroutine": 41
         },
         {
           "Func": "net/http.(*conn).serve",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
-          "Line": 1851
+          "Line": 1851,
+          "Goroutine": 41
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "net/http.(*Server).Serve",
         "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
-        "Line": 2969
+        "Line": 2969,
+        "Goroutine": 0
       }
     }
   ]

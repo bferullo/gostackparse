@@ -104,6 +104,16 @@ func Parse(r io.Reader) ([]*Goroutine, []error) {
 				abortGoroutine("invalid goroutine header")
 			}
 		case stateStackFunc, stateCreatedByFunc:
+			goroutineIdx := g.ID
+			if state == stateCreatedByFunc {
+				i := bytes.Index(line, inGoroutinePrefix)
+				if i > 0 {
+					goroutineIdx, _ = strconv.Atoi(string(line[i+len(inGoroutinePrefix):]))
+				} else {
+					// missing the "in goroutine" part of "created by"
+					goroutineIdx = 0
+				}
+			}
 			f = parseFunc(line, state)
 			if f == nil {
 				if bytes.Equal(line, framesElided) {
@@ -118,6 +128,7 @@ func Parse(r io.Reader) ([]*Goroutine, []error) {
 				abortGoroutine("invalid function call")
 				continue
 			}
+			f.Goroutine = goroutineIdx
 			if state == stateStackFunc {
 				g.Stack = append(g.Stack, f)
 				state = stateStackFile
@@ -156,6 +167,7 @@ var (
 	createdByPrefix       = []byte("created by ")
 	originatingFromPrefix = []byte("[originating from goroutine ")
 	framesElided          = []byte("...additional frames elided...")
+	inGoroutinePrefix     = []byte(" in goroutine ")
 )
 
 var goroutineHeader = regexp.MustCompile(
@@ -284,7 +296,7 @@ func parseFile(line []byte, f *Frame) (ret bool) {
 		stateLine
 	)
 
-	var state = stateFilename
+	state := stateFilename
 	for i, c := range line {
 		switch state {
 		case stateFilename:
@@ -308,7 +320,6 @@ func parseFile(line []byte, f *Frame) (ret bool) {
 			}
 			f.Line = f.Line*10 + int(c-'0')
 		}
-
 	}
 	return
 }
@@ -357,4 +368,8 @@ type Frame struct {
 	// Line is the line number of inside of the source file that was active when
 	// the sample was taken.
 	Line int
+	// Goroutine is the goroutine index of the stack to which this frame belongs.
+	// This will be 0 if that can't be determined. The goroutine is not guaranteed
+	// to exist in the parsed stacks.
+	Goroutine int
 }

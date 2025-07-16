@@ -30,27 +30,29 @@ func TestParse_GoldenFiles(t *testing.T) {
 	inputs, err := filepath.Glob(filepath.Join("test-fixtures", "*.txt"))
 	require.NoError(t, err)
 	for _, input := range inputs {
-		inputData, err := ioutil.ReadFile(input)
-		require.NoError(t, err)
+		t.Run(input, func(t *testing.T) {
+			inputData, err := os.ReadFile(input)
+			require.NoError(t, err)
 
-		golden := strings.TrimSuffix(input, filepath.Ext(input)) + ".golden.json"
-		goroutines, errs := Parse(bytes.NewReader(inputData))
-		var errS []string
-		for _, err := range errs {
-			errS = append(errS, err.Error())
-		}
-		actual, err := json.MarshalIndent(struct {
-			Errors     []string
-			Goroutines []*Goroutine
-		}{errS, goroutines}, "", "  ")
-		actual = append(actual, '\n')
-		require.NoError(t, err)
+			golden := strings.TrimSuffix(input, filepath.Ext(input)) + ".golden.json"
+			goroutines, errs := Parse(bytes.NewReader(inputData))
+			var errS []string
+			for _, err := range errs {
+				errS = append(errS, err.Error())
+			}
+			actual, err := json.MarshalIndent(struct {
+				Errors     []string
+				Goroutines []*Goroutine
+			}{errS, goroutines}, "", "  ")
+			actual = append(actual, '\n')
+			require.NoError(t, err)
 
-		if *update {
-			ioutil.WriteFile(golden, actual, 0644)
-		}
-		expected, _ := ioutil.ReadFile(golden)
-		require.JSONEq(t, string(expected), string(actual))
+			if *update {
+				ioutil.WriteFile(golden, actual, 0o644)
+			}
+			expected, _ := ioutil.ReadFile(golden)
+			require.JSONEq(t, string(expected), string(actual))
+		})
 	}
 }
 
@@ -411,11 +413,11 @@ func TestFuzzCorupus(t *testing.T) {
 	}
 	dir := "corpus"
 	tests := fixtures.Permutations()
-	require.NoError(t, os.MkdirAll(dir, 0755))
+	require.NoError(t, os.MkdirAll(dir, 0o755))
 	for i := 0; i < tests; i++ {
 		dump := fixtures.Generate(i)
 		name := filepath.Join(dir, fmt.Sprintf("%d.txt", i))
-		require.NoError(t, ioutil.WriteFile(name, []byte(dump.String()), 0666))
+		require.NoError(t, ioutil.WriteFile(name, []byte(dump.String()), 0o666))
 	}
 }
 
