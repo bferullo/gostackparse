@@ -109,6 +109,9 @@ func Parse(r io.Reader) ([]*Goroutine, []error) {
 				i := bytes.Index(line, inGoroutinePrefix)
 				if i > 0 {
 					goroutineIdx, _ = strconv.Atoi(string(line[i+len(inGoroutinePrefix):]))
+				} else {
+					// missing the "in goroutine" part of "created by"
+					goroutineIdx = 0
 				}
 			}
 			f = parseFunc(line, state)
@@ -366,5 +369,7 @@ type Frame struct {
 	// the sample was taken.
 	Line int
 	// Goroutine is the goroutine index of the stack to which this frame belongs.
+	// This will be 0 if that can't be determined. The goroutine is not guaranteed
+	// to exist in the parsed stacks.
 	Goroutine int
 }

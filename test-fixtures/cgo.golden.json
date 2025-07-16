@@ -59,7 +59,7 @@
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/DataDog/dd-trace-go/profiler/internal/stackparse/test-fixtures/cgo.go",
         "Line": 36,
-        "Goroutine": 6
+        "Goroutine": 0
       }
     },
     {
@@ -104,7 +104,7 @@
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/DataDog/dd-trace-go/profiler/internal/stackparse/test-fixtures/cgo.go",
         "Line": 37,
-        "Goroutine": 7
+        "Goroutine": 0
       }
     }
   ]

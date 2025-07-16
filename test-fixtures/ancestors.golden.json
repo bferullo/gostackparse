@@ -47,7 +47,7 @@
         "Func": "main.d1",
         "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
         "Line": 69,
-        "Goroutine": 25
+        "Goroutine": 0
       },
       "Ancestor": {
         "ID": 24,
@@ -109,7 +109,7 @@
           "Func": "main.d1",
           "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
           "Line": 69,
-          "Goroutine": 24
+          "Goroutine": 0
         },
         "Ancestor": {
           "ID": 23,
@@ -171,7 +171,7 @@
             "Func": "main.d1",
             "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
             "Line": 69,
-            "Goroutine": 23
+            "Goroutine": 0
           },
           "Ancestor": {
             "ID": 22,
@@ -233,7 +233,7 @@
               "Func": "main.d1",
               "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
               "Line": 69,
-              "Goroutine": 22
+              "Goroutine": 0
             },
             "Ancestor": {
               "ID": 21,
@@ -295,7 +295,7 @@
                 "Func": "main.d1",
                 "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
                 "Line": 69,
-                "Goroutine": 21
+                "Goroutine": 0
               },
               "Ancestor": {
                 "ID": 20,
@@ -351,7 +351,7 @@
                   "Func": "main.main",
                   "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
                   "Line": 19,
-                  "Goroutine": 20
+                  "Goroutine": 0
                 },
                 "Ancestor": {
                   "ID": 1,
@@ -399,7 +399,7 @@
         "Func": "main.d1",
         "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
         "Line": 69,
-        "Goroutine": 29
+        "Goroutine": 0
       },
       "Ancestor": {
         "ID": 28,
@@ -461,7 +461,7 @@
           "Func": "main.d1",
           "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
           "Line": 69,
-          "Goroutine": 28
+          "Goroutine": 0
         },
         "Ancestor": {
           "ID": 27,
@@ -523,7 +523,7 @@
             "Func": "main.d1",
             "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
             "Line": 69,
-            "Goroutine": 27
+            "Goroutine": 0
           },
           "Ancestor": {
             "ID": 26,
@@ -579,7 +579,7 @@
               "Func": "main.main",
               "File": "/Users/eric/Downloads/gostackparse/test-fixtures/ancestors.go",
               "Line": 22,
-              "Goroutine": 26
+              "Goroutine": 0
             },
             "Ancestor": {
               "ID": 1,

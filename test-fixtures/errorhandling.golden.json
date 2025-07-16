@@ -37,7 +37,7 @@
         "Func": "main.main",
         "File": "/example/main.go",
         "Line": 110,
-        "Goroutine": 3
+        "Goroutine": 0
       }
     }
   ]

@@ -613,7 +613,7 @@
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/DataDog/dd-trace-go/profiler/internal/stackparse/test-fixtures/frameselided_goroutine.go",
         "Line": 16,
-        "Goroutine": 18
+        "Goroutine": 0
       }
     },
     {

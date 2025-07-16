@@ -71,7 +71,7 @@
         "Func": "main.indirectShortSleepLoop2",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
         "Line": 185,
-        "Goroutine": 22
+        "Goroutine": 0
       }
     },
     {
@@ -152,7 +152,7 @@
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
         "Line": 121,
-        "Goroutine": 3
+        "Goroutine": 0
       }
     },
     {
@@ -179,7 +179,7 @@
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
         "Line": 130,
-        "Goroutine": 4
+        "Goroutine": 0
       }
     },
     {
@@ -206,7 +206,7 @@
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
         "Line": 131,
-        "Goroutine": 5
+        "Goroutine": 0
       }
     },
     {
@@ -227,7 +227,7 @@
         "Func": "main.main",
         "File": "/Users/felix.geisendoerfer/go/src/github.com/felixge/go-profiler-notes/examples/goroutine/main.go",
         "Line": 132,
-        "Goroutine": 6
+        "Goroutine": 0
       }
     },
     {
@@ -248,7 +248,7 @@
         "Func": "net/http.(*Transport).dialConn",
         "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/transport.go",
         "Line": 1709,
-        "Goroutine": 24
+        "Goroutine": 0
       }
     },
     {
@@ -323,7 +323,7 @@
         "Func": "net/http.(*Transport).dialConn",
         "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/transport.go",
         "Line": 1708,
-        "Goroutine": 23
+        "Goroutine": 0
       }
     },
     {
@@ -428,7 +428,7 @@
         "Func": "net/http.(*Server).Serve",
         "File": "/usr/local/Cellar/go/1.15.6/libexec/src/net/http/server.go",
         "Line": 2969,
-        "Goroutine": 41
+        "Goroutine": 0
       }
     }
   ]
