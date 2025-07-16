@@ -10,34 +10,40 @@
         {
           "Func": "testing.tRunner.func1.1",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/testing/testing.go",
-          "Line": 1072
+          "Line": 1072,
+          "Goroutine": 7
         },
         {
           "Func": "testing.tRunner.func1",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/testing/testing.go",
-          "Line": 1075
+          "Line": 1075,
+          "Goroutine": 7
         },
         {
           "Func": "panic",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/runtime/panic.go",
-          "Line": 969
+          "Line": 969,
+          "Goroutine": 7
         },
         {
           "Func": "gopkg.in/DataDog/dd-trace-go.v1/profiler/internal/stackparse.TestParse_Example",
           "File": "/Users/felix.geisendoerfer/go/src/github.com/DataDog/dd-trace-go/profiler/internal/stackparse/stackparse_test.go",
-          "Line": 21
+          "Line": 21,
+          "Goroutine": 7
         },
         {
           "Func": "testing.tRunner",
           "File": "/usr/local/Cellar/go/1.15.6/libexec/src/testing/testing.go",
-          "Line": 1123
+          "Line": 1123,
+          "Goroutine": 7
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "testing.(*T).Run",
         "File": "/usr/local/Cellar/go/1.15.6/libexec/src/testing/testing.go",
-        "Line": 1168
+        "Line": 1168,
+        "Goroutine": 7
       }
     }
   ]

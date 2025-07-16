@@ -12,7 +12,8 @@
         {
           "Func": "main.main",
           "File": "/example/main.go",
-          "Line": 152
+          "Line": 152,
+          "Goroutine": 1
         }
       ],
       "FramesElided": false,
@@ -27,14 +28,16 @@
         {
           "Func": "main.foo",
           "File": "/example/main.go",
-          "Line": 182
+          "Line": 182,
+          "Goroutine": 3
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "main.main",
         "File": "/example/main.go",
-        "Line": 110
+        "Line": 110,
+        "Goroutine": 3
       }
     }
   ]

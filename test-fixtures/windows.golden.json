@@ -10,7 +10,8 @@
         {
           "Func": "runtime/pprof.writeGoroutineStacks",
           "File": "C:/Users/felixge/pprof.go",
-          "Line": 693
+          "Line": 693,
+          "Goroutine": 1
         }
       ],
       "FramesElided": false,

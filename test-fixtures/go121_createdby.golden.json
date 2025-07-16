@@ -10,19 +10,22 @@
         {
           "Func": "main.printStack",
           "File": "/Users/nick.ripley/repos/gostackparse/test-fixtures/go121_createdby.go",
-          "Line": 23
+          "Line": 23,
+          "Goroutine": 18
         },
         {
           "Func": "main.main.func1",
           "File": "/Users/nick.ripley/repos/gostackparse/test-fixtures/go121_createdby.go",
-          "Line": 16
+          "Line": 16,
+          "Goroutine": 18
         }
       ],
       "FramesElided": false,
       "CreatedBy": {
         "Func": "main.main",
         "File": "/Users/nick.ripley/repos/gostackparse/test-fixtures/go121_createdby.go",
-        "Line": 14
+        "Line": 14,
+        "Goroutine": 1
       }
     },
     {
@@ -34,17 +37,20 @@
         {
           "Func": "sync.runtime_Semacquire",
           "File": "/Users/nick.ripley/repos/go/src/runtime/sema.go",
-          "Line": 62
+          "Line": 62,
+          "Goroutine": 1
         },
         {
           "Func": "sync.(*WaitGroup).Wait",
           "File": "/Users/nick.ripley/repos/go/src/sync/waitgroup.go",
-          "Line": 116
+          "Line": 116,
+          "Goroutine": 1
         },
         {
           "Func": "main.main",
           "File": "/Users/nick.ripley/repos/gostackparse/test-fixtures/go121_createdby.go",
-          "Line": 18
+          "Line": 18,
+          "Goroutine": 1
         }
       ],
       "FramesElided": false,
